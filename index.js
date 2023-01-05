@@ -4,8 +4,10 @@ let number2 =  document.getElementById("number2")
 
 let number  = ""
 let operation = null
+let pressOperation = false
 
 let result = document.getElementById("answer")
+
 
 function answer()
 {
@@ -32,60 +34,102 @@ function print1() {
     console.log(1);
     number += "1"
     console.log(number);
+
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
+    
 }
 
 function print2() {
     console.log(2);
     number += "2"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print3() {
     console.log(3);
     number += "3"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print4() {
     console.log(4);
     number += "4"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print5() {
     console.log(5);
     number += "5"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print6() {
     console.log(6);
     number += "6"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print7() {
     console.log(7);
     number += "7"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print8() {
     console.log(8);
     number += "8"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print9() {
     console.log(9);
     number += "9"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function print0() {
     console.log(0);
     number += "0"
     console.log(number);
+    if(!pressOperation)
+        number1.textContent = number 
+    else    
+        number2.textContent = number
 }
 
 function sum() {
@@ -93,24 +137,28 @@ function sum() {
     number = ""
     operation = 3
     console.log(number1.textContent);
+    pressOperation = true
 }
 function subtract() {
     number1.textContent = number
     number = ""
     operation = 4
     console.log(number1.textContent);
+    pressOperation = true
 }
 function divide() {
     number1.textContent = number
     number = ""
     operation = 1
     console.log(number1.textContent);
+    pressOperation = true
 }
 function multiply() {
     number1.textContent = number
     number = ""
     operation = 2
     console.log(number1.textContent);
+    pressOperation = true
 }
 
 
